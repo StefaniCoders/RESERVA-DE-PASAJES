@@ -1,13 +1,12 @@
 var nombres = [];
 var apellidos = [];
 var dni = [];
-var estado = [];
 var asiento = -1;
 //var celdas = document.getElementsByTagName('td');
 var asientos = [];
-
+ini();
 function ini(){
-	for(int i = 0; i < 32; ++i){
+	for(var i = 0; i < 32; ++i){
 		nombres.push(" ");
 		apellidos.push(" ");
 		dni.push(" ");
@@ -28,7 +27,16 @@ function cambiarAsiento(a){
 
 function reservar(){
 	//nombres[asiento] = document.getElementById("nombre").text;
-	alert(document.getElementById("nombre").text);
+	//document.write("CORRIENDO!");
+	nombres[asiento] = document.getElementsByName("nombre")[0].value;
+	apellidos[asiento] = document.getElementsByName("apellido")[0].value;
+	dni[asiento] = document.getElementsByName("dni")[0].value;
+}
+
+function mostrar(){
+	document.getElementsByName("nombre")[0].value = nombres[asiento];
+	document.getElementsByName("apellido")[0].value = apellidos[asiento];
+	document.getElementsByName("dni")[0].value = dni[asiento];
 }
 
 /*for (var i = 0; i < celdas.length; i++) {

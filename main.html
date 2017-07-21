@@ -11,12 +11,9 @@
     </script>
 </head>
 <body>
-	<script>
-	ini();
-	</script>
 	<div id="busqueda">
 	<h1>BUSQUEDA</h1>
-    <p>DNI:<input type="text" name="DNI"><button onclick="mostrarOcultar(false)">BUSCAR</button><button onclick="mostrarOcultar(true)">mostrAR</button></p>
+    <p>DNI:<input type="text" name="DNI"><button onclick="mostrarOcultar(false)">BUSCAR</button>
 	</div>
 	
 	<div id="resultado" style="display:block;"><!-- block none -->
@@ -33,16 +30,16 @@
 	<tr>
 	<td><div id="reservaPasajes">
  	<h1>RESERVA DE PASAJES</h1>
-    <p><strong>Nombre:</strong><input type="text" id="nombre"></p>
+    <p><strong>Nombre:</strong><input type="text" name="nombre"></p>
 
-    <p><strong>Apellido:</strong><input type="text" id="apellido"></p>
+    <p><strong>Apellido:</strong><input type="text" name="apellido"></p>
 
-    <p><strong>DNI:<strong><input type="text" id="DNI"></p>
+    <p><strong>DNI:<strong><input type="text" name="dni"></p>
 
 
-    <button id="reservar" onclick="reservar()"> RESERVAR</button>
+    <button id="Breservar" onclick="reservar()"> RESERVAR</button>
 	<button>CANCELAR</button><br>
-    <button>  MOSTRAR </button>
+    <button id = "Bmostrar" onclick="mostrar()">  MOSTRAR </button>
 	</div></td>
 	<td>
 	<div id="tabla">

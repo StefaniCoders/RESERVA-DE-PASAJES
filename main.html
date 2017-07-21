@@ -7,15 +7,18 @@
 <body>
 	<div id="busqueda">
 	<h1>BUSQUEDA</h1>
-    <p>DNI:<input type="text" name="DNI"><button onclick="mostrarOcultar(false)">BUSCAR</button>
+    <p>DNI:<input type="text" name="dniS"><button onclick="buscar()">BUSCAR</button><button onclick="mostrarOcultar(true)">MOSTRAR</button><button onclick="mostrarOcultar(false)">OCULTAR</button>
 	</div>
 	
-	<div id="resultado" style="display:block;"><!-- block none -->
+	<div id="resultado" style="display:none;"><!-- block none -->
 	Resultado:
 	<table border="1px">
 	<tr>
-	<td>Nombres:</td><td>...@#@#@#@#</td>
-	</tr>
+	<td>Nombres:</td>	<td><input id="nombreSearch"></td>
+	</tr><tr>
+	<td>Apellidos</td>	<td><input id="apellidoSearch"></td>
+	</tr><tr>
+	<td>DNI</td>		<td><input id="dniSearch"></td>
 	</table>
 	
 	</div>
@@ -32,8 +35,8 @@
 
 
     <button id="Breservar" onclick="reservar()"> RESERVAR</button>
-	<button>CANCELAR</button><br>
     <button id = "Bmostrar" onclick="mostrar()">  MOSTRAR </button>
+	<button id="Beliminar" onclick="eliminar()">ELIMINAR</button>
 	</div></td>
 	<td>
 	<div id="tabla">

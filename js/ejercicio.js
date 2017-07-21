@@ -9,8 +9,29 @@ function ini(){
 	for(var i = 0; i < 32; ++i){
 		nombres.push(" ");
 		apellidos.push(" ");
-		dni.push(" ");
+		dni.push("0");
 	}
+}
+
+function buscar(){
+	asiento = -1;
+	mostrarOcultar(true);
+	var getDni = document.getElementsByName("dniS")[0].value;
+	getDni= parseInt(getDni);
+	for(var i = 0; i < 32; ++i){
+		if(parseInt(dni[i]) == getDni){
+			//alert(parseInt(dni[i]));
+			asiento = i;
+			document.getElementById("nombreSearch").value = nombres[asiento];
+			document.getElementById("apellidoSearch").value = apellidos[asiento];
+			document.getElementById("dniSearch").value = dni[asiento];
+			return;
+		}
+	}
+	document.getElementById("nombreSearch").value = " ";
+	document.getElementById("apellidoSearch").value = " ";
+	document.getElementById("dniSearch").value = " ";
+	
 }
 
 function mostrarOcultar(a){
@@ -37,6 +58,13 @@ function mostrar(){
 	document.getElementsByName("nombre")[0].value = nombres[asiento];
 	document.getElementsByName("apellido")[0].value = apellidos[asiento];
 	document.getElementsByName("dni")[0].value = dni[asiento];
+}
+
+function eliminar(){
+	nombres[asiento] = " ";
+	apellidos[asiento] = " ";
+	dni[asiento] = " ";
+	mostrar();
 }
 
 /*for (var i = 0; i < celdas.length; i++) {

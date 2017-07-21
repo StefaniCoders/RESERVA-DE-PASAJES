@@ -2,13 +2,21 @@
 <html>
 <head>
 	<title>Ejercicio</title>
-	<script language="Javascript" src="js/ejercicio.js"></script>
+	<script language="Javascript" src="js/ejercicio.js">
+	</script>
+	<script>
+	function foo(){
+		document.write("hola mundo")
+		}
+    </script>
 </head>
 <body>
-
+	<script>
+	ini();
+	</script>
 	<div id="busqueda">
 	<h1>BUSQUEDA</h1>
-    <p>DNI:<input type="text" name="DNI"><button onclick="ini()">BUSCAR</button></p>
+    <p>DNI:<input type="text" name="DNI"><button onclick="mostrarOcultar(false)">BUSCAR</button><button onclick="mostrarOcultar(true)">mostrAR</button></p>
 	</div>
 	
 	<div id="resultado" style="display:block;"><!-- block none -->
@@ -25,11 +33,11 @@
 	<tr>
 	<td><div id="reservaPasajes">
  	<h1>RESERVA DE PASAJES</h1>
-    <p><strong>Nombre:</strong><input type="text" name="Renovar"></p>
+    <p><strong>Nombre:</strong><input type="text" id="nombre"></p>
 
-    <p><strong>Apellido:</strong><input type="text" name="Cancelar"></p>
+    <p><strong>Apellido:</strong><input type="text" id="apellido"></p>
 
-    <p><strong>DNI:<strong><input type="text" name="DNI"></p>
+    <p><strong>DNI:<strong><input type="text" id="DNI"></p>
 
 
     <button id="reservar" onclick="reservar()"> RESERVAR</button>
@@ -40,61 +48,61 @@
 	<div id="tabla">
 	<table border="4px" align = "center">
 		<tr>
-			<td>4</td>
-			<td>8</td>
-			<td>12</td>
-			<td>16</td>
-			<td>20</td>
-			<td>24</td>
-			<td>28</td>
-			<td>32</td>
+			<td><a href="#" onclick="cambiarAsiento(3);">4</a></td>
+			<td><a href="#" onclick="cambiarAsiento(7);">8</a></td>
+			<td><a href="#" onclick="cambiarAsiento(11);">12</a></td>
+			<td><a href="#" onclick="cambiarAsiento(15);">16</a></td>
+			<td><a href="#" onclick="cambiarAsiento(19);">20</a></td>
+			<td><a href="#" onclick="cambiarAsiento(23);">24</a></td>
+			<td><a href="#" onclick="cambiarAsiento(27);">28</a></td>
+			<td><a href="#" onclick="cambiarAsiento(31);">32</a></td>
 		</tr>
 		<tr>
-			<td>3</td>
-			<td>7</td>
-			<td>11</td>
-			<td>15</td>
-			<td>19</td>
-			<td>23</td>
-			<td>27</td>
-			<td>31</td>
-		</tr>
-		
-		<tr>
-			<td>_</td>
-			<td>_</td>
-			<td>_</td>
-			<td>_</td>
-			<td>_</td>
-			<td>_</td>
-			<td>_</td>
-			<td>_</td>
+			<td><a href="#" onclick="cambiarAsiento(2);">3</a></td>
+			<td><a href="#" onclick="cambiarAsiento(6);">7</a></td>
+			<td><a href="#" onclick="cambiarAsiento(10);">11</a></td>
+			<td><a href="#" onclick="cambiarAsiento(14);">15</a></td>
+			<td><a href="#" onclick="cambiarAsiento(18);">19</a></td>
+			<td><a href="#" onclick="cambiarAsiento(22);">23</a></td>
+			<td><a href="#" onclick="cambiarAsiento(26);">27</a></td>
+			<td><a href="#" onclick="cambiarAsiento(30);">31</a></td>
 		</tr>
 		
 		<tr>
-			<td>2</td>
-			<td>6</td>
-			<td>10</td>
-			<td>14</td>
-			<td>18</td>
-			<td>22</td>
-			<td>26</td>
-			<td>30</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="cambiarAsiento(1);">2</a></td>
+			<td><a href="#" onclick="cambiarAsiento(5);">6</a></td>
+			<td><a href="#" onclick="cambiarAsiento(9);">10</a></td>
+			<td><a href="#" onclick="cambiarAsiento(13);">14</a></td>
+			<td><a href="#" onclick="cambiarAsiento(17);">18</a></td>
+			<td><a href="#" onclick="cambiarAsiento(21);">22</a></td>
+			<td><a href="#" onclick="cambiarAsiento(25);">26</a></td>
+			<td><a href="#" onclick="cambiarAsiento(29);">30</a></td>
 		</tr>
 		<tr>
-			<td><a href="redirect()">1</a></td>
-			<td>5</td>
-			<td>9</td>
-			<td>13</td>
-			<td>17</td>
-			<td>21</td>
-			<td>25</td>
-			<td>29</td>
+			<td><a href="#" onclick="cambiarAsiento(0);">1</a></td>
+			<td><a href="#" onclick="cambiarAsiento(4);">5</a></td>
+			<td><a href="#" onclick="cambiarAsiento(8);">9</a></td>
+			<td><a href="#" onclick="cambiarAsiento(12);">13</a></td>
+			<td><a href="#" onclick="cambiarAsiento(16);">17</a></td>
+			<td><a href="#" onclick="cambiarAsiento(20);">21</a></td>
+			<td><a href="#" onclick="cambiarAsiento(24);">25</a></td>
+			<td><a href="#" onclick="cambiarAsiento(28);">29</a></td>
 
 		</tr>
 	</table>
 	</div>
 	</td>
 	
-    
 </body>
+</html>

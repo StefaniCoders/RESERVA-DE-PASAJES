@@ -4,10 +4,31 @@
 	<title>ej evalluado</title>
 </head>
 <body>
+	<div id="busqueda">
+	<h1>BUSQUEDA</h1>
+    <p>DNI:<input type="text" name="DNI"><button>BUSCAR</button></p>
+	</div>
+	
+	<div id="resultado">
+	</div>
+	
+	<table border=0>
+	<tr>
+	<td><div id="reservaPasajes">
+ 	<h1>RESERVA DE PASAJES</h1>
+    <p><strong>Nombre:</strong><input type="text" name="Renovar"></p>
 
-	<div id = "mostrar"> resultado </div>
-	<div input id = "nombre" placeholder = "Ingresa tu nombre"></div>
-	<h1>RESERVA DE ASIENTOS</h1>
+    <p><strong>Apellido:</strong><input type="text" name="Cancelar"></p>
+
+    <p><strong>DNI:<strong><input type="text" name="DNI"></p>
+
+
+    <button id="reservar" onclick="reservar()"> RESERVAR</button>
+	<button>CANCELAR</button><br>
+    <button>  MOSTRAR </button>
+	</div></td>
+	<td>
+	<div id="tabla">
 	<table border="4px" align = "center">
 		<tr>
 			<td>4</td>
@@ -29,6 +50,18 @@
 			<td>27</td>
 			<td>31</td>
 		</tr>
+		
+		<tr>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+		</tr>
+		
 		<tr>
 			<td>2</td>
 			<td>6</td>
@@ -51,24 +84,8 @@
 
 		</tr>
 	</table>
-
-	
-	<div id="mostrar"></div>
-
-    <p>DNI:<input type="text" name="DNI"><button>BUSCAR</button></p>
-
-	<div id="reservaPasajes">
- 	<h1>RESERVA DE PASAJES</h1>
-    <p><strong>Nombre:</strong><input type="text" name="Renovar"></p>
-
-    <p><strong>Apellido:</strong><input type="text" name="Cancelar"></p>
-
-    <p><strong>DNI:<strong><input type="text" name="DNI"></p>
-
-
-    <button id="reservar" onclick="reservar()"> RESERVAR</button>
-	<button>CANCELAR</button><br>
-    <button>  MOSTRAR </button>
 	</div>
+	</td>
+	
     <script src="js/ejercicio.js"></script>
 </body>

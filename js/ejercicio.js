@@ -2,16 +2,20 @@ var nombres = [];
 var apellidos = [];
 var dni = [];
 var estado = [];
-var celdas = document.getElementsByTagName('td');
+//var celdas = document.getElementsByTagName('td');
 var asientos = [];
 
 function ini(){
-	document.getElementById("resultado").style.display = "none";
+	//document.getElementById("resultado").style.display = "none";
+	document.write("gooo");
 }
 
 /*for (var i = 0; i < celdas.length; i++) {
     celdas[i].addEventListener('click',redirect,false);
 }*/
+
+/*
+
 function mostrar(){
 	document.write("<td>Nombres:</td>");
     //document.getElementById("mostrar").innerHTML=(event.target.textContent);
@@ -30,3 +34,4 @@ function reservar () {
 
 	 
 }
+*/

@@ -1,6 +1,7 @@
 var nombres = [];
 var apellidos = [];
 var dni = [];
+<<<<<<< HEAD
 var estado = [];
 var asiento = -1;
 //var celdas = document.getElementsByTagName('td');
@@ -8,6 +9,14 @@ var asientos = [];
 
 function ini(){
 	for(int i = 0; i < 32; ++i){
+=======
+var asiento = -1;
+//var celdas = document.getElementsByTagName('td');
+var asientos = [];
+ini();
+function ini(){
+	for(var i = 0; i < 32; ++i){
+>>>>>>> kz
 		nombres.push(" ");
 		apellidos.push(" ");
 		dni.push(" ");
@@ -24,11 +33,28 @@ function mostrarOcultar(a){
 
 function cambiarAsiento(a){
 	asiento = a;
+<<<<<<< HEAD
 }
 
 function reservar(){
 	//nombres[asiento] = document.getElementById("nombre").text;
 	alert(document.getElementById("nombre").text);
+=======
+}
+
+function reservar(){
+	//nombres[asiento] = document.getElementById("nombre").text;
+	//document.write("CORRIENDO!");
+	nombres[asiento] = document.getElementsByName("nombre")[0].value;
+	apellidos[asiento] = document.getElementsByName("apellido")[0].value;
+	dni[asiento] = document.getElementsByName("dni")[0].value;
+}
+
+function mostrar(){
+	document.getElementsByName("nombre")[0].value = nombres[asiento];
+	document.getElementsByName("apellido")[0].value = apellidos[asiento];
+	document.getElementsByName("dni")[0].value = dni[asiento];
+>>>>>>> kz
 }
 
 /*for (var i = 0; i < celdas.length; i++) {

@@ -7,6 +7,7 @@ var asientos = [];
 
 function ini(){
 	document.getElementById("resultado").style.display = "none";
+	document.write("gooo");
 }
 
 /*for (var i = 0; i < celdas.length; i++) {
